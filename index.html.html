@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rukha Café & Restaurant</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+  
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+   
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f8f8;
+        }
+        .section-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: #333;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: -8px;
+            width: 60px;
+            height: 3px;
+            background-color: #a3e635; /* Tailwind green-400 */
+            transform: translateX(-50%);
+            border-radius: 9999px;
+        }
+        .menu-item-card {
+            background-color: #fff;
+            border-radius: 1rem; /* rounded-xl */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-md */
+            overflow: hidden;
+            transition: transform 0.2s ease-in-out;
+        }
+        .menu-item-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="bg-gray-800 p-4 sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <a href="#" class="text-white text-2xl font-bold mb-2 md:mb-0">Rukha Café & Restaurant</a>
+            <div class="flex flex-wrap justify-center space-x-4">
+                <a href="#about" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300">About Us</a>
+                <a href="#services" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300">Services</a>
+                <a href="#menu" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300">Menu</a>
+                <a href="#environment" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300">Environment</a>
+                <a href="#partners" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300">Partnership</a>
+                <a href="#contact" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative bg-cover bg-center h-96 flex items-center justify-center text-white" style="background-image: url('C:\Users\ASEAN-L1\Rukha Website\Picture');">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="relative z-10 text-center px-4">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-4 drop-shadow-lg">Taste the Tradition, Savor the Moment</h1>
+            <p class="text-lg md:text-xl font-light drop-shadow-md">Your Culinary Journey Starts Here in Siem Reap</p>
+            <a href="#menu" class="mt-8 inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-full shadow-lg transform transition duration-300 hover:scale-105">Explore Our Menu</a>
+        </div>
+    </header>
+
+    <!-- About Us Section (Vision & Mission) -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold section-title mb-12">About Us</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="p-6 bg-gray-50 rounded-xl shadow-md transition duration-300 hover:shadow-lg">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Our Vision</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        To be the leading culinary destination in Siem Reap, renowned for authentic Cambodian flavors, exceptional service, and a welcoming environment that connects people with local culture and traditions.
+                    </p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-xl shadow-md transition duration-300 hover:shadow-lg">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Our Mission</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        To provide an unforgettable dining experience through high-quality, locally sourced ingredients, innovative dishes, and warm, attentive hospitality. We strive to promote Cambodian heritage through our food and create a vibrant community hub for locals and tourists alike.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold section-title mb-12">Our Services</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-md transition duration-300 hover:shadow-lg flex flex-col items-center">
+                    <img src="https://placehold.co/100x100/A3E635/FFFFFF?text=Dine" alt="Dine-in Service" class="w-24 h-24 mb-4 rounded-full object-cover">
+                    <h3 class="text-xl font-semibold mb-3">Dine-in Experience</h3>
+                    <p class="text-gray-700 text-center">Enjoy our delicious meals in our cozy and authentic Cambodian restaurant ambiance.</p>
+                </div>
+                <!-- Service 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-md transition duration-300 hover:shadow-lg flex flex-col items-center">
+                    <img src="https://placehold.co/100x100/A3E635/FFFFFF?text=Events" alt="Event Hosting" class="w-24 h-24 mb-4 rounded-full object-cover">
+                    <h3 class="text-xl font-semibold mb-3">Private Event Hosting</h3>
+                    <p class="text-gray-700 text-center">Host your special events, parties, or corporate gatherings with our customizable packages.</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-md transition duration-300 hover:shadow-lg flex flex-col items-center">
+                    <img src="https://placehold.co/100x100/A3E635/FFFFFF?text=Takeout" alt="Takeout Service" class="w-24 h-24 mb-4 rounded-full object-cover">
+                    <h3 class="text-xl font-semibold mb-3">Takeout & Delivery</h3>
+                    <p class="text-gray-700 text-center">Order your favorite dishes for takeout or have them delivered right to your doorstep.</p>
+                </div>
+                <!-- Service 4 -->
+                <div class="bg-white p-6 rounded-xl shadow-md transition duration-300 hover:shadow-lg flex flex-col items-center">
+                    <img src="https://placehold.co/100x100/A3E635/FFFFFF?text=Catering" alt="Catering" class="w-24 h-24 mb-4 rounded-full object-cover">
+                    <h3 class="text-xl font-semibold mb-3">Catering Services</h3>
+                    <p class="text-gray-700 text-center">We offer catering for various events, big or small, bringing our flavors to your location.</p>
+                </div>
+                <!-- Service 5 -->
+                <div class="bg-white p-6 rounded-xl shadow-md transition duration-300 hover:shadow-lg flex flex-col items-center">
+                    <img src="https://placehold.co/100x100/A3E635/FFFFFF?text=Cooking" alt="Cooking Classes" class="w-24 h-24 mb-4 rounded-full object-cover">
+                    <h3 class="text-xl font-semibold mb-3">Cambodian Cooking Classes</h3>
+                    <p class="text-gray-700 text-center">Learn to cook authentic Cambodian dishes with our expert chefs.</p>
+                </div>
+                <!-- Service 6 -->
+                <div class="bg-white p-6 rounded-xl shadow-md transition duration-300 hover:shadow-lg flex flex-col items-center">
+                    <img src="https://placehold.co/100x100/A3E635/FFFFFF?text=Tour" alt="Tour Guide Meals" class="w-24 h-24 mb-4 rounded-full object-cover">
+                    <h3 class="text-xl font-semibold mb-3">Tour Guide & Driver Meals</h3>
+                    <p class="text-gray-700 text-center">Complimentary meals provided for tour guides and drivers bringing guests.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-16 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold section-title mb-12">Our Products</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Product 1: Spices -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md transition duration-300 hover:shadow-lg">
+                    <img src="https://placehold.co/300x200/D4EDDA/3C763D?text=Local+Spices" alt="Local Spices" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Authentic Cambodian Spices</h3>
+                    <p class="text-gray-700">Bring the taste of Cambodia home with our selection of locally sourced spices and herbs.</p>
+                    <p class="text-lg font-bold text-green-600 mt-3">$5 - $15</p>
+                </div>
+                <!-- Product 2: Coffee Beans -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md transition duration-300 hover:shadow-lg">
+                    <img src="https://placehold.co/300x200/F2F2F2/333333?text=Coffee+Beans" alt="Coffee Beans" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Premium Coffee Beans</h3>
+                    <p class="text-gray-700">Enjoy our rich, aromatic coffee beans, carefully selected for a perfect brew.</p>
+                    <p class="text-lg font-bold text-green-600 mt-3">$10 - $25</p>
+                </div>
+                <!-- Product 3: Souvenirs -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md transition duration-300 hover:shadow-lg">
+                    <img src="https://placehold.co/300x200/B0E0E6/000000?text=Handicrafts" alt="Handicrafts" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Local Handicrafts & Souvenirs</h3>
+                    <p class="text-gray-700">Discover unique Cambodian handicrafts, perfect as gifts or keepsakes.</p>
+                    <p class="text-lg font-bold text-green-600 mt-3">$8 - $50</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold section-title mb-12">Our Delicious Menu</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Menu Item 1: Amok -->
+                <div class="menu-item-card">
+                    <img src="https://placehold.co/400x250/FFD700/000000?text=Fish+Amok" alt="Fish Amok" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2">Fish Amok</h3>
+                        <p class="text-gray-700 mb-4">Cambodia's national dish, a creamy fish curry steamed in a banana leaf cup.</p>
+                        <span class="text-xl font-bold text-green-600">$12.00</span>
+                    </div>
+                </div>
+                <!-- Menu Item 2: Lok Lak -->
+                <div class="menu-item-card">
+                    <img src="https://placehold.co/400x250/FFA07A/000000?text=Beef+Lok+Lak" alt="Beef Lok Lak" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2">Beef Lok Lak</h3>
+                        <p class="text-gray-700 mb-4">Stir-fried beef served on a bed of lettuce, tomatoes, cucumbers, and a fried egg.</p>
+                        <span class="text-xl font-bold text-green-600">$13.50</span>
+                    </div>
+                </div>
+                <!-- Menu Item 3: Khmer Curry -->
+                <div class="menu-item-card">
+                    <img src="https://placehold.co/400x250/ADFF2F/000000?text=Khmer+Curry" alt="Khmer Curry" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2">Khmer Red Curry</h3>
+                        <p class="text-gray-700 mb-4">A rich and flavorful red curry with chicken, potatoes, and sweet potatoes.</p>
+                        <span class="text-xl font-bold text-green-600">$11.00</span>
+                    </div>
+                </div>
+                <!-- Menu Item 4: Spring Rolls -->
+                <div class="menu-item-card">
+                    <img src="https://placehold.co/400x250/F08080/000000?text=Spring+Rolls" alt="Fresh Spring Rolls" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2">Fresh Spring Rolls</h3>
+                        <p class="text-gray-700 mb-4">Light and healthy fresh spring rolls with shrimp, pork, and fresh vegetables.</p>
+                        <span class="text-xl font-bold text-green-600">$7.50</span>
+                    </div>
+                </div>
+                <!-- Menu Item 5: Fried Noodles -->
+                <div class="menu-item-card">
+                    <img src="https://placehold.co/400x250/FFB6C1/000000?text=Fried+Noodles" alt="Fried Noodles" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2">Stir-fried Noodles</h3>
+                        <p class="text-gray-700 mb-4">Classic stir-fried noodles with your choice of meat or vegetables.</p>
+                        <span class="text-xl font-bold text-green-600">$9.00</span>
+                    </div>
+                </div>
+                <!-- Menu Item 6: Mango Sticky Rice -->
+                <div class="menu-item-card">
+                    <img src="https://placehold.co/400x250/ADD8E6/000000?text=Mango+Sticky+Rice" alt="Mango Sticky Rice" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2">Mango Sticky Rice</h3>
+                        <p class="text-gray-700 mb-4">Sweet sticky rice served with fresh mango and coconut milk, a delightful dessert.</p>
+                        <span class="text-xl font-bold text-green-600">$6.50</span>
+                    </div>
+                </div>
+            </div>
+            <a href="https://placehold.co/400x250/ADD8E6/000000?text=Full+Menu+PDF" target="_blank" class="mt-12 inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-full shadow-lg transform transition duration-300 hover:scale-105">View Full Menu (PDF)</a>
+        </div>
+    </section>
+
+    <!-- Restaurant Environment Section -->
+    <section id="environment" class="py-16 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold section-title mb-12">Our Restaurant Environment</h2>
+            <p class="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
+                Rukha Café & Restaurant offers a serene and authentic Cambodian dining experience. Surrounded by lush greenery, our space is designed to provide a relaxing escape from the bustling city.
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="rounded-xl overflow-hidden shadow-md transition duration-300 hover:shadow-lg">
+                    <img src="https://placehold.co/600x400/98FB98/000000?text=Outdoor+Seating" alt="Outdoor Seating" class="w-full h-64 object-cover">
+                    <div class="p-4 bg-gray-50">
+                        <h3 class="text-xl font-semibold text-gray-800">Lush Outdoor Seating</h3>
+                    </div>
+                </div>
+                <div class="rounded-xl overflow-hidden shadow-md transition duration-300 hover:shadow-lg">
+                    <img src="https://placehold.co/600x400/87CEFA/000000?text=Traditional+Decor" alt="Traditional Decor" class="w-full h-64 object-cover">
+                    <div class="p-4 bg-gray-50">
+                        <h3 class="text-xl font-semibold text-gray-800">Traditional Cambodian Decor</h3>
+                    </div>
+                </div>
+                <div class="rounded-xl overflow-hidden shadow-md transition duration-300 hover:shadow-lg">
+                    <img src="https://placehold.co/600x400/DA70D6/000000?text=Cozy+Interiors" alt="Cozy Interiors" class="w-full h-64 object-cover">
+                    <div class="p-4 bg-gray-50">
+                        <h3 class="text-xl font-semibold text-gray-800">Cozy & Welcoming Interiors</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partner Cooperation Section (Benefit Package) -->
+    <section id="partners" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold section-title mb-12">Partner Cooperation & Benefits</h2>
+            <p class="text-lg text-gray-700 mb-8 max-w-3xl mx-auto">
+                We are actively seeking partnerships with travel agencies, tour operators, and local businesses. Collaborate with us and unlock exclusive benefits for your clients and your business.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Benefit Package 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-2 border-transparent hover:border-green-400 transition duration-300">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Bronze Tier</h3>
+                    <p class="text-sm text-gray-600 mb-4">For partners bringing in revenue of **$3,000+ per year**</p>
+                    <ul class="text-left text-gray-700 space-y-2 mb-6">
+                        <li class="flex items-start"><span class="text-green-500 mr-2">&#10003;</span> 10% of total revenues</li>
+                        <li class="flex items-start"><span class="text-green-500 mr-2">&#10003;</span> Merchandises</li>
+                        <li class="flex items-start"><span class="text-green-500 mr-2">&#10003;</span> Free one-time lunch or dinner (for a family with 2 children)</li>
+                    </ul>
+                    <p class="text-sm text-gray-500">Valid for 1 Year</p>
+                </div>
+
+                <!-- Benefit Package 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-2 border-transparent hover:border-green-400 transition duration-300">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Silver Tier</h3>
+                    <p class="text-sm text-gray-600 mb-4">For partners bringing in revenue of **$6,000+ per year**</p>
+                    <ul class="text-left text-gray-700 space-y-2 mb-6">
+                        <li class="flex items-start"><span class="text-green-500 mr-2">&#10003;</span> 15% of total revenues</li>
+                        <li class="flex items-start"><span class="text-green-500 mr-2">&#10003;</span> Merchandises</li>
+                        <li class="flex items-start"><span class="text-green-500 mr-2">&#10003;</span> Free two-time lunch or dinner (for a family with 2 children)</li>
+                        <li class="flex items-start"><span class="text-green-500 mr-2">&#10003;</span> Gift card ($100) for shopping</li>
+                        <li class="flex items-start"><span class="text-green-500 mr-2">&#10003;</span> Free two-hour massage for 2 people</li>
+                    </ul>
+                    <p class="text-sm text-gray-500">Valid for 1 Year</p>
+                </div>
+
+                <!-- Benefit Package 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-2 border-transparent hover:border-green-400 transition duration-300">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Gold Tier</h3>
+                    <p class="text-sm text-gray-600 mb-4">For partners bringing in revenue of **$9,000+ per year**</p>
+                    <ul class="text-left text-gray-700 space-y-2 mb-6">
+                        <li class="flex items-start"><span class="text-green-500 mr-2">&#10003;</span> 20% of total revenues</li>
+                        <li class="flex items-start"><span class="text-green-500 mr-2">&#10003;</span> Merchandises</li>
+                        <li class="flex items-start"><span class="text-green-500 mr-2">&#10003;</span> Free two-time lunch or dinner (for a family with 2 children)</li>
+                        <li class="flex items-start"><span class="text-green-500 mr-2">&#10003;</span> Gift card ($100) for shopping</li>
+                        <li class="flex items-start"><span class="text-green-500 mr-2">&#10003;</span> Free two-hour massage for 2 people</li>
+                    </ul>
+                    <p class="text-sm text-gray-500">Valid for 1 Year</p>
+                </div>
+            </div>
+            <a href="#contact" class="mt-12 inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-full shadow-lg transform transition duration-300 hover:scale-105">Become Our Partner</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold section-title mb-12">Contact Us</h2>
+            <div class="max-w-xl mx-auto bg-gray-50 p-8 rounded-xl shadow-lg">
+                <p class="text-lg text-gray-700 mb-6">
+                    We'd love to hear from you! Reach out to us for reservations, inquiries, or partnership opportunities.
+                </p>
+                <div class="space-y-4 text-left">
+                    <p class="text-gray-800"><strong class="text-green-600">Address:</strong> Trapeang Ses Village, Kouk Chak Commune, Siem Reap District, Siem Reap Province</p>
+                    <p class="text-gray-800"><strong class="text-green-600">Phone:</strong> 099 411 211 / 010 86 86 30</p>
+                    <p class="text-gray-800"><strong class="text-green-600">Email:</strong> rukha22@gmail.com</p>
+                    <p class="text-gray-800"><strong class="text-green-600">Facebook:</strong> <a href="https://www.facebook.com/RukhaCafeRestaurant" target="_blank" class="text-blue-600 hover:underline">ភោជនីដ្ឋានរុក្ខកាហ្វេ -Rukha Café & Restaurant</a></p>
+                </div>
+                <div class="mt-8">
+                    <h3 class="text-2xl font-semibold mb-4">Send Us a Message</h3>
+                    <form class="space-y-4">
+                        <div>
+                            <input type="text" placeholder="Your Name" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-400">
+                        </div>
+                        <div>
+                            <input type="email" placeholder="Your Email" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-400">
+                        </div>
+                        <div>
+                            <textarea placeholder="Your Message" rows="5" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-400"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-md shadow-md transition duration-300 hover:scale-105">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 Rukha Café & Restaurant. All rights reserved.</p>
+            <div class="mt-4 space-x-4">
+                <a href="#" class="hover:text-white transition duration-300">Privacy Policy</a>
+                <span class="text-gray-500">|</span>
+                <a href="#" class="hover:text-white transition duration-300">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
